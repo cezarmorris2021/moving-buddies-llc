@@ -19,8 +19,9 @@
       <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
       <a href="#areas">Service Area</a>
+      <a href="#quote">Quote</a>
       <a href="#contact">Contact</a>
-      <a href="tel:5204200127" class="call-btn">Call (520) 420-0127</a>
+      <a href="#quote" class="call-btn">Book a Job</a>
     </nav>
   </div>
 </header>
@@ -36,6 +37,28 @@
     <div class="hero-buttons">
       <a href="#quote" class="btn-primary">Get a Free Quote</a>
       <a href="tel:5204200127" class="btn-secondary">Call Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- BADGES / TRUST STRIP -->
+<section class="badges">
+  <div class="container badges-row">
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Locally owned & operated
+    </div>
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Box truck with liftgate
+    </div>
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Clean, respectful crews
+    </div>
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Honest, upfront pricing
     </div>
   </div>
 </section>
@@ -143,36 +166,46 @@
     </div>
 
     <div class="quote-grid">
-      <form class="quote-form">
+      <!-- REAL QUOTE FORM: hook this to Formspree or Google Forms -->
+      <form
+        class="quote-form"
+        action="https://formspree.io/f/YOUR-ENDPOINT-HERE"
+        method="POST"
+      >
         <div class="field">
           <label for="name">Name</label>
-          <input id="name" type="text" placeholder="Your full name" required />
+          <input id="name" name="name" type="text" placeholder="Your full name" required />
         </div>
 
         <div class="field">
           <label for="phone">Phone</label>
-          <input id="phone" type="tel" placeholder="(520) 555-1234" required />
+          <input id="phone" name="phone" type="tel" placeholder="(520) 555-1234" required />
         </div>
 
         <div class="field">
           <label for="serviceType">What do you need?</label>
-          <select id="serviceType">
+          <select id="serviceType" name="serviceType">
             <option value="">Choose one</option>
-            <option value="move">Local move</option>
-            <option value="haul">Hauling / junk removal</option>
-            <option value="delivery">Delivery / large item transport</option>
-            <option value="other">Something else</option>
+            <option value="Local move">Local move</option>
+            <option value="Hauling / junk removal">Hauling / junk removal</option>
+            <option value="Delivery / large item transport">Delivery / large item transport</option>
+            <option value="Something else">Something else</option>
           </select>
         </div>
 
         <div class="field">
           <label for="details">Job details</label>
-          <textarea id="details" placeholder="Example: 1-bedroom apartment, 2nd floor, moving from west Tucson to central."></textarea>
+          <textarea
+            id="details"
+            name="details"
+            placeholder="Example: 1-bedroom apartment, 2nd floor, moving from west Tucson to central."
+          ></textarea>
         </div>
 
-        <button type="submit" class="btn-primary">Submit (demo only)</button>
+        <button type="submit" class="btn-primary">Submit quote request</button>
         <p class="form-note">
-          This form is a visual demo only. When you’re ready, you can connect it to email, text or a form service so quotes come straight to you.
+          This form can send quotes directly to your email when you connect it to a service like
+          Formspree or Google Forms. For now, it will show a basic success message.
         </p>
       </form>
 
