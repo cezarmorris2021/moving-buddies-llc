@@ -191,7 +191,8 @@ a {
 
 .btn-secondary:hover {
   border-color: var(--accent);
-    }
+}
+
 /* ===== Sections ===== */
 .section {
   padding: 2.5rem 0;
@@ -292,3 +293,168 @@ a {
   font-size: 0.82rem;
   color: var(--text-soft);
 }
+
+/* ===== Quote ===== */
+.quote-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  gap: 1.4rem;
+}
+
+@media (min-width: 880px) {
+  .quote-grid {
+    grid-template-columns: minmax(0,1.2fr) minmax(0,0.8fr);
+  }
+}
+
+.quote-form {
+  border-radius: 16px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  padding: 1rem 1rem 1.1rem;
+  box-shadow: 0 16px 34px rgba(15,23,42,0.9);
+  font-size: 0.88rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.22rem;
+  margin-bottom: 0.75rem;
+}
+
+.field label {
+  font-size: 0.8rem;
+  color: rgba(226, 232, 240, 0.96);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.86rem;
+  border-radius: 10px;
+  border: 1px solid rgba(51,65,85,0.95);
+  background: rgba(15,23,42,0.97);
+  color: var(--text-main);
+  padding: 0.52rem 0.7rem;
+  outline: none;
+  transition: border-color 130ms ease-out, box-shadow 130ms ease-out;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(148,163,184,0.78);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 1px rgba(34,197,94,0.7),
+    0 0 0 6px rgba(34,197,94,0.22);
+}
+
+.form-note {
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+}
+
+.quote-side {
+  font-size: 0.88rem;
+}
+
+.quote-side h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.98rem;
+}
+
+.quote-side p {
+  margin: 0 0 0.4rem;
+  color: var(--text-soft);
+}
+
+.quote-side ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+/* ===== Areas ===== */
+.areas-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 860px) {
+  .areas-grid {
+    grid-template-columns: repeat(3, minmax(0,1fr));
+  }
+}
+
+.area-card {
+  border-radius: 16px;
+  background: #020617;
+  border: 1px solid var(--border);
+  padding: 0.9rem 0.9rem 1rem;
+  font-size: 0.88rem;
+}
+
+.area-card h4 {
+  margin: 0 0 0.3rem;
+  font-size: 0.98rem;
+}
+
+.area-card p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+/* ===== Contact ===== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  gap: 1.2rem;
+}
+
+@media (min-width: 860px) {
+  .contact-grid {
+    grid-template-columns: minmax(0,1.1fr) minmax(0,0.9fr);
+  }
+}
+
+.contact-details {
+  font-size: 0.9rem;
+}
+
+.contact-details p {
+  margin: 0 0 0.35rem;
+}
+
+.contact-note {
+  font-size: 0.82rem;
+  color: var(--text-soft);
+}
+
+/* ===== Footer ===== */
+.footer {
+  border-top: 1px solid rgba(15,23,42,0.95);
+  padding: 1.4rem 0 2rem;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.7rem;
+  }
+  
