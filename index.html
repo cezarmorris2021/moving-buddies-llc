@@ -38,7 +38,9 @@
       <a href="tel:5204200127" class="btn-secondary">Call Now</a>
     </div>
   </div>
-</section><!-- SERVICES SECTION -->
+</section>
+
+<!-- SERVICES SECTION -->
 <section id="services" class="section">
   <div class="container">
     <div class="section-header">
@@ -129,4 +131,129 @@
     </p>
   </div>
 </section>
-  
+
+<!-- QUOTE SECTION -->
+<section id="quote" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h3 class="section-title">Get a fast, no-pressure quote</h3>
+      <p class="section-subtitle">
+        Tell us what you need moved, hauled or delivered and we’ll reply with a clear price and options.
+      </p>
+    </div>
+
+    <div class="quote-grid">
+      <form class="quote-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your full name" required />
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" placeholder="(520) 555-1234" required />
+        </div>
+
+        <div class="field">
+          <label for="serviceType">What do you need?</label>
+          <select id="serviceType">
+            <option value="">Choose one</option>
+            <option value="move">Local move</option>
+            <option value="haul">Hauling / junk removal</option>
+            <option value="delivery">Delivery / large item transport</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="details">Job details</label>
+          <textarea id="details" placeholder="Example: 1-bedroom apartment, 2nd floor, moving from west Tucson to central."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Submit (demo only)</button>
+        <p class="form-note">
+          This form is a visual demo only. When you’re ready, you can connect it to email, text or a form service so quotes come straight to you.
+        </p>
+      </form>
+
+      <aside class="quote-side">
+        <h4>Prefer to call or text?</h4>
+        <p>
+          Reach us directly at <strong>(520) 420-0127</strong>. If we’re on a job, leave a message with:
+        </p>
+        <ul>
+          <li>Your name</li>
+          <li>Pickup and drop-off locations</li>
+          <li>What needs to be moved or hauled</li>
+          <li>Preferred date and time</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA SECTION -->
+<section id="areas" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <h3 class="section-title">Service area</h3>
+      <p class="section-subtitle">
+        Based in Tucson, Arizona and serving the city and nearby communities. If you’re not sure
+        you’re in range, just ask.
+      </p>
+    </div>
+
+    <div class="areas-grid">
+      <div class="area-card">
+        <h4>Tucson</h4>
+        <p>Most neighborhoods in and around the city, including central, west, east and south Tucson.</p>
+      </div>
+      <div class="area-card">
+        <h4>Surrounding areas</h4>
+        <p>Marana, Oro Valley, Vail and nearby communities – depending on schedule and job size.</p>
+      </div>
+      <div class="area-card">
+        <h4>Custom runs</h4>
+        <p>Need something a bit farther? Tell us what you’re planning and we’ll see what’s possible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section">
+  <div class="container contact-grid">
+    <div>
+      <h3 class="section-title">Contact Moving Buddies LLC</h3>
+      <p class="section-subtitle">
+        The fastest way to reach us is by call or text. You can also save this page and share it when
+        someone asks if you “know a guy with a truck.”
+      </p>
+    </div>
+    <div class="contact-details">
+      <p><strong>Phone / Text:</strong> (520) 420-0127</p>
+      <p><strong>Based in:</strong> Tucson, Arizona</p>
+      <p><strong>Services:</strong> Hauling • Delivery • Moving</p>
+      <p class="contact-note">
+        Jobs are scheduled first-come, first-served. For best availability, reach out a few days before
+        your ideal date.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Moving Buddies LLC. All rights reserved.</span>
+    <span>Tucson, Arizona · Hauling • Delivery • Moving · (520) 420-0127</span>
+  </div>
+</footer>
+
+<script>
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
