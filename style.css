@@ -192,3 +192,103 @@ a {
 .btn-secondary:hover {
   border-color: var(--accent);
     }
+/* ===== Sections ===== */
+.section {
+  padding: 2.5rem 0;
+}
+
+.section-alt {
+  background: radial-gradient(circle at top, #02081b 0, #020617 60%);
+}
+
+.section-header {
+  margin-bottom: 1.6rem;
+}
+
+.section-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  max-width: 40rem;
+}
+
+/* ===== Services ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 860px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+}
+
+.service-card {
+  border-radius: 16px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  padding: 0.9rem 0.9rem 1rem;
+  box-shadow: 0 14px 30px rgba(15,23,42,0.9);
+  font-size: 0.88rem;
+}
+
+.service-card h4 {
+  margin: 0 0 0.3rem;
+  font-size: 0.98rem;
+}
+
+.service-card p {
+  margin: 0 0 0.5rem;
+  color: var(--text-soft);
+}
+
+.service-card ul {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--text-main);
+}
+
+/* ===== Pricing ===== */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 860px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, minmax(0,1fr));
+  }
+}
+
+.pricing-card {
+  border-radius: 16px;
+  background: #020617;
+  border: 1px solid var(--border);
+  padding: 0.9rem 0.9rem 1rem;
+  font-size: 0.88rem;
+}
+
+.pricing-card h4 {
+  margin: 0 0 0.3rem;
+  font-size: 0.98rem;
+}
+
+.price {
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+}
+
+.price-note {
+  margin: 1.4rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-soft);
+}
